@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page3.html">Team</a>
+      <a href="/page2.html" aria-current="page">Survey</a>
+      
+    </nav>
+    <fieldset class="one">
+    <main>
+    <h1>Survey</h1>
+      <p class="title-text">Please complete this form with the required information</p>
+    </main>
+
+    <!--Personal Information-->
+
+    <fieldset>
+      <legend>Personal Information</legend>
+    <div>
+      <p class="inline">First Name<br><input type="text" class="input" placeholder="Jane" required></p>
+      <p class="inline">Last Name<br><input type="text" class="input" placeholder="Doe" required></p>
+      <p class="inline">Email<br><input type="email" class="input" placeholder="Doe.Jane@gmail.com" required></p>
+       <p class="inline">Phone Number (Optional)<br><input type="text" class="input" placeholder="(555) 555-5555"></p>
+    </div>
+    </fieldset>
+
+    <!--Radio Buttons-->
+
+    <fieldset class="two">
+    <legend class="padding">Was this information helpful?</legend>
+<label for="yes"><input id="yes" type="radio" class="helpful-info" value="1" checked /> Yes</label>
+<label for="no"><input id="no" type="radio" class="helpful-info" value="2"/> No</label>
+</fieldset>
+<fieldset>
+  <legend class="padding">Is there anything that we missed? (Optional)<legend><br>
+  <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Additional Comments"></textarea>
+</fieldset>  
+<input type="submit" value="Submit" id="submit" class="submit">
+  </body>
+  
+</html>
